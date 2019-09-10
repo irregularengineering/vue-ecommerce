@@ -5,8 +5,8 @@
         <div class="container">
           <h1 class="title"> Discount iPhone Cases</h1>
           <h2 class="is-size-3 has-text-weight-light">
-            Because <br>
-            this somehow makes sense.
+            Because somehow <br>
+            this all makes sense.
           </h2>
         </div>
       </div>
