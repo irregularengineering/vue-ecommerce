@@ -3,10 +3,10 @@
     <section class="hero is-medium" :style="{ backgroundImage: `url(${hero})` }">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title"> Celebrate Uniquesness</h1>
+          <h1 class="title"> Discount iPhone Cases</h1>
           <h2 class="is-size-3 has-text-weight-light">
-            Beautiful mobile covers that <br>
-            reflects your personality.
+            Because <br>
+            this somehow makes sense.
           </h2>
         </div>
       </div>

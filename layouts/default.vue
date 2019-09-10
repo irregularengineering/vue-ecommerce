@@ -4,12 +4,13 @@
       <div class="container">
         <div class="navbar-brand">
           <router-link to="/" class="navbar-item is-size-3 logo has-text-dark">
-            The<b>Case</b> Company
+            Wild<b>Bill</b> Hiccup's 
           </router-link>
         </div>
         <div class="navbar-menu is-active">
           <div class="navbar-end">
             <div class="navbar-item">
+              <img src="../assets/cart.png">
               <nuxt-link :to="{name: 'cart'}"> Cart ({{ cartTotal }})</nuxt-link>
             </div>
           </div>
