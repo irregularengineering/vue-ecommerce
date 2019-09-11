@@ -8,7 +8,7 @@
         <img :src="product.metadata.image.imgix_url" alt="">
       </figure><br>
       <button class="button is-link is-outlined is-rounded is-block" @click="addToCart(product)">
-        ${{product.metadata.price}} - Add to Cart
+        Add to Cart
       </button>
     </div>
 
