@@ -1,0 +1,15 @@
+# Starts an agent with the system subscription
+---
+version: "3"
+services:
+  sensu-agent:
+    image: sensu/sensu:latest
+    ports:
+    - 3031:3031
+    volumes:
+    - "sensu-agent-data:/var/lib/sensu"
+    command: "sensu-agent start --backend-url ws://sensu-backend:8081--log-level debug --subscriptions system --api-host 0.0.0.0 "
+
+volumes:
+  sensu-agent-data:
+    driver: local

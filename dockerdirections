@@ -1,0 +1,12 @@
+# If you are running the agent locally on the same system as the Sensu backend,
+# add `--link sensu-backend` to your Docker arguments and change the backend
+# URL to `--backend-url ws://sensu-backend:8081`.
+
+# Starts an agent with the system subscription
+docker run -v /var/lib/sensu:/var/lib/sensu -d \
+--name sensu-agent sensu/sensu:latest \
+sensu-agent start --backend-url ws://sensu.yourdomain.com:8081 --log-level debug --subscriptions system --api-host 0.0.0.0 --cache-dir /var/lib/sensu
+
+docker run -v /var/lib/sensu:/var/lib/sensu -d \
+--link pk-sensu_sensu-backend_1 --name sensu-agent sensu/sensu:latest \
+sensu-agent start --backend-url ws://sensu-backend:8081 --log-level debug --subscriptions system --api-host 0.0.0.0 --cache-dir /var/lib/sensu
