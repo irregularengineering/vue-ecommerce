@@ -12,3 +12,9 @@ yarn start
 
 # generate static project
 yarn run generate
+
+
+## fuck cosmic.js for being so expensive. let's try another one...
+
+npm install -g storyblok
+storyblok
